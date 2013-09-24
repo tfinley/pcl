@@ -1,0 +1,2 @@
+./pcl_global_classification0 -models_dir /home/taylor/src/point_models/ -descriptor_name esf -training_dir /home/taylor/src/trained_point_models/ -nn 1
+
