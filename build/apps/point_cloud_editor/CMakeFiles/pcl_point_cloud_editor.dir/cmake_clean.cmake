@@ -1,0 +1,40 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/main.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/mainWindow.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/commandQueue.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/selection.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/copyBuffer.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/deleteCommand.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/cutCommand.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/pasteCommand.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/cloud.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/cloudEditorWidget.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/cloudTransformTool.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/select1DTool.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/select2DTool.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/selectionTransformTool.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/transformCommand.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/common.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/denoiseCommand.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/statistics.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/statisticsDialog.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/trackball.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/src/denoiseParameterForm.cpp.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/qrc_pceditor_resources.cxx.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/include/pcl/apps/point_cloud_editor/moc_cloudEditorWidget.cxx.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/include/pcl/apps/point_cloud_editor/moc_mainWindow.cxx.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/include/pcl/apps/point_cloud_editor/moc_denoiseParameterForm.cxx.o"
+  "CMakeFiles/pcl_point_cloud_editor.dir/include/pcl/apps/point_cloud_editor/moc_statisticsDialog.cxx.o"
+  "qrc_pceditor_resources.cxx"
+  "include/pcl/apps/point_cloud_editor/moc_cloudEditorWidget.cxx"
+  "include/pcl/apps/point_cloud_editor/moc_mainWindow.cxx"
+  "include/pcl/apps/point_cloud_editor/moc_denoiseParameterForm.cxx"
+  "include/pcl/apps/point_cloud_editor/moc_statisticsDialog.cxx"
+  "../../bin/pcl_point_cloud_editor.pdb"
+  "../../bin/pcl_point_cloud_editor"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/pcl_point_cloud_editor.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

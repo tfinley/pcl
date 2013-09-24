@@ -1,0 +1,35 @@
+# CMake generated Testfile for 
+# Source directory: /home/taylor/src/pcl
+# Build directory: /home/taylor/src/pcl/build
+# 
+# This file includes the relevent testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+SUBDIRS(cuda)
+SUBDIRS(common)
+SUBDIRS(kdtree)
+SUBDIRS(octree)
+SUBDIRS(search)
+SUBDIRS(io)
+SUBDIRS(sample_consensus)
+SUBDIRS(filters)
+SUBDIRS(2d)
+SUBDIRS(features)
+SUBDIRS(keypoints)
+SUBDIRS(geometry)
+SUBDIRS(ml)
+SUBDIRS(segmentation)
+SUBDIRS(visualization)
+SUBDIRS(outofcore)
+SUBDIRS(stereo)
+SUBDIRS(examples)
+SUBDIRS(surface)
+SUBDIRS(registration)
+SUBDIRS(recognition)
+SUBDIRS(tools)
+SUBDIRS(tracking)
+SUBDIRS(gpu)
+SUBDIRS(apps)
+SUBDIRS(people)
+SUBDIRS(test)
+SUBDIRS(simulation)
+SUBDIRS(doc)
