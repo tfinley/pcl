@@ -184,6 +184,48 @@ pcl_global_classification/fast:
 .PHONY : pcl_global_classification/fast
 
 # Convenience name for target.
+apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule
+.PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule
+
+# Convenience name for target.
+pcl_global_classification_print_conf: apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule
+.PHONY : pcl_global_classification_print_conf
+
+# fast build rule for target.
+pcl_global_classification_print_conf/fast:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build
+.PHONY : pcl_global_classification_print_conf/fast
+
+# Convenience name for target.
+apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/rule:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/rule
+.PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/rule
+
+# Convenience name for target.
+pcl_global_classification_stat: apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/rule
+.PHONY : pcl_global_classification_stat
+
+# fast build rule for target.
+pcl_global_classification_stat/fast:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build
+.PHONY : pcl_global_classification_stat/fast
+
+# Convenience name for target.
+apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/rule:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/rule
+.PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/rule
+
+# Convenience name for target.
+pcl_global_classification_wl: apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/rule
+.PHONY : pcl_global_classification_wl
+
+# fast build rule for target.
+pcl_global_classification_wl/fast:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build
+.PHONY : pcl_global_classification_wl/fast
+
+# Convenience name for target.
 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_local_or_mian.dir/rule:
 	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_local_or_mian.dir/rule
 .PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_local_or_mian.dir/rule
@@ -220,6 +262,78 @@ src/global_classification.s: src/global_classification.cpp.s
 src/global_classification.cpp.s:
 	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification.dir/src/global_classification.cpp.s
 .PHONY : src/global_classification.cpp.s
+
+src/global_classification_print_conf.o: src/global_classification_print_conf.cpp.o
+.PHONY : src/global_classification_print_conf.o
+
+# target to build an object file
+src/global_classification_print_conf.cpp.o:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/src/global_classification_print_conf.cpp.o
+.PHONY : src/global_classification_print_conf.cpp.o
+
+src/global_classification_print_conf.i: src/global_classification_print_conf.cpp.i
+.PHONY : src/global_classification_print_conf.i
+
+# target to preprocess a source file
+src/global_classification_print_conf.cpp.i:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/src/global_classification_print_conf.cpp.i
+.PHONY : src/global_classification_print_conf.cpp.i
+
+src/global_classification_print_conf.s: src/global_classification_print_conf.cpp.s
+.PHONY : src/global_classification_print_conf.s
+
+# target to generate assembly for a file
+src/global_classification_print_conf.cpp.s:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/src/global_classification_print_conf.cpp.s
+.PHONY : src/global_classification_print_conf.cpp.s
+
+src/global_classification_stat.o: src/global_classification_stat.cpp.o
+.PHONY : src/global_classification_stat.o
+
+# target to build an object file
+src/global_classification_stat.cpp.o:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/src/global_classification_stat.cpp.o
+.PHONY : src/global_classification_stat.cpp.o
+
+src/global_classification_stat.i: src/global_classification_stat.cpp.i
+.PHONY : src/global_classification_stat.i
+
+# target to preprocess a source file
+src/global_classification_stat.cpp.i:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/src/global_classification_stat.cpp.i
+.PHONY : src/global_classification_stat.cpp.i
+
+src/global_classification_stat.s: src/global_classification_stat.cpp.s
+.PHONY : src/global_classification_stat.s
+
+# target to generate assembly for a file
+src/global_classification_stat.cpp.s:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/src/global_classification_stat.cpp.s
+.PHONY : src/global_classification_stat.cpp.s
+
+src/global_classification_wl.o: src/global_classification_wl.cpp.o
+.PHONY : src/global_classification_wl.o
+
+# target to build an object file
+src/global_classification_wl.cpp.o:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/src/global_classification_wl.cpp.o
+.PHONY : src/global_classification_wl.cpp.o
+
+src/global_classification_wl.i: src/global_classification_wl.cpp.i
+.PHONY : src/global_classification_wl.i
+
+# target to preprocess a source file
+src/global_classification_wl.cpp.i:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/src/global_classification_wl.cpp.i
+.PHONY : src/global_classification_wl.cpp.i
+
+src/global_classification_wl.s: src/global_classification_wl.cpp.s
+.PHONY : src/global_classification_wl.s
+
+# target to generate assembly for a file
+src/global_classification_wl.cpp.s:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/src/global_classification_wl.cpp.s
+.PHONY : src/global_classification_wl.cpp.s
 
 src/local_recognition_mian_dataset.o: src/local_recognition_mian_dataset.cpp.o
 .PHONY : src/local_recognition_mian_dataset.o
@@ -259,12 +373,24 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... pcl_global_classification"
+	@echo "... pcl_global_classification_print_conf"
+	@echo "... pcl_global_classification_stat"
+	@echo "... pcl_global_classification_wl"
 	@echo "... pcl_local_or_mian"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... src/global_classification.o"
 	@echo "... src/global_classification.i"
 	@echo "... src/global_classification.s"
+	@echo "... src/global_classification_print_conf.o"
+	@echo "... src/global_classification_print_conf.i"
+	@echo "... src/global_classification_print_conf.s"
+	@echo "... src/global_classification_stat.o"
+	@echo "... src/global_classification_stat.i"
+	@echo "... src/global_classification_stat.s"
+	@echo "... src/global_classification_wl.o"
+	@echo "... src/global_classification_wl.i"
+	@echo "... src/global_classification_wl.s"
 	@echo "... src/local_recognition_mian_dataset.o"
 	@echo "... src/local_recognition_mian_dataset.i"
 	@echo "... src/local_recognition_mian_dataset.s"

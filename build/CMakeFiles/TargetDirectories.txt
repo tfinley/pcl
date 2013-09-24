@@ -91,6 +91,9 @@
 /home/taylor/src/pcl/build/tools/CMakeFiles/pcl_fpfh_estimation.dir
 /home/taylor/src/pcl/build/apps/CMakeFiles/pcl_fs_face_detector.dir
 /home/taylor/src/pcl/build/apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification.dir
+/home/taylor/src/pcl/build/apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir
+/home/taylor/src/pcl/build/apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir
+/home/taylor/src/pcl/build/apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir
 /home/taylor/src/pcl/build/tools/CMakeFiles/pcl_gp3_surface.dir
 /home/taylor/src/pcl/build/people/CMakeFiles/pcl_ground_based_rgbd_people_detector.dir
 /home/taylor/src/pcl/build/test/CMakeFiles/pcl_gtest.dir

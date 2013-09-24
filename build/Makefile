@@ -2874,6 +2874,45 @@ pcl_global_classification/fast:
 .PHONY : pcl_global_classification/fast
 
 #=============================================================================
+# Target rules for targets named pcl_global_classification_print_conf
+
+# Build rule for target.
+pcl_global_classification_print_conf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_global_classification_print_conf
+.PHONY : pcl_global_classification_print_conf
+
+# fast build rule for target.
+pcl_global_classification_print_conf/fast:
+	$(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/build
+.PHONY : pcl_global_classification_print_conf/fast
+
+#=============================================================================
+# Target rules for targets named pcl_global_classification_stat
+
+# Build rule for target.
+pcl_global_classification_stat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_global_classification_stat
+.PHONY : pcl_global_classification_stat
+
+# fast build rule for target.
+pcl_global_classification_stat/fast:
+	$(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_stat.dir/build
+.PHONY : pcl_global_classification_stat/fast
+
+#=============================================================================
+# Target rules for targets named pcl_global_classification_wl
+
+# Build rule for target.
+pcl_global_classification_wl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_global_classification_wl
+.PHONY : pcl_global_classification_wl
+
+# fast build rule for target.
+pcl_global_classification_wl/fast:
+	$(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_wl.dir/build
+.PHONY : pcl_global_classification_wl/fast
+
+#=============================================================================
 # Target rules for targets named pcl_local_or_mian
 
 # Build rule for target.
@@ -4578,6 +4617,9 @@ help:
 	@echo "... pcl_test_search_speed"
 	@echo "... pcl_3d_rec_framework"
 	@echo "... pcl_global_classification"
+	@echo "... pcl_global_classification_print_conf"
+	@echo "... pcl_global_classification_stat"
+	@echo "... pcl_global_classification_wl"
 	@echo "... pcl_local_or_mian"
 	@echo "... doc_modeler"
 	@echo "... pcl_modeler"
