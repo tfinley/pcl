@@ -52,7 +52,7 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 
 		//TMF systematically load pcd files (file_iter) is short for the 32 pcd files each should have 
 		//TMF the program will fail unless there are 32 files (inputCloud0.pcd - inputCloud31.pcd)
-		for (int file_iter = 14; file_iter < 18; file_iter++)
+		for (int file_iter = 14; file_iter < 19; file_iter++)
 		{
 			//TMF moved this after each pcd file load - reset them
 /*			previous_cluster_size = 0;
@@ -68,7 +68,7 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 			
 			//TMF - Load PCD file
 			pcl::PointCloud<pcl::PointXYZ>::Ptr frame (new pcl::PointCloud<pcl::PointXYZ>);
-			if (pcl::io::loadPCDFile<pcl::PointXYZ> (file_path, *frame) == -1) PCL_ERROR ("Couldn't read file test_pcd.pcd \n"); //* load the file
+			if (pcl::io::loadPCDFile<pcl::PointXYZ> (file_path, *frame) == -1) PCL_ERROR ("Couldn't read file \n"); //* load the file
 	  
 			//Copy point cloud for reuse - this was there before
 			pcl::PointCloud<pcl::PointXYZ>::Ptr xyz_points (new pcl::PointCloud<pcl::PointXYZ>);
@@ -79,14 +79,14 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 			dps.setInputCloud (xyz_points);
 			dps.setMaxZBounds (Z_DIST_);
 			dps.setObjectMinHeight (0.01f); //0.02 was eliminating random clusters on floor
-			dps.setMinClusterSize (1000); //was 1000
+			dps.setMinClusterSize (500); //was 1000
 			dps.setWSize (9);
 			dps.setDistanceBetweenClusters (0.05f); //was 0.1
 
 			std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> clusters;
 			std::vector<pcl::PointIndices> indices;
 			dps.setDownsamplingSize (0.01f); //TMF was (0.02f)
-			dps.compute_full (clusters); //This was commented out becuase of errors with unorganized point clouds coming from the txt file.
+			dps.compute (clusters); //TMF - was dps.compute_fast
 			dps.getIndicesClusters (indices);
 			Eigen::Vector4f table_plane_;
 			Eigen::Vector3f normal_plane_ = Eigen::Vector3f (table_plane_[0], table_plane_[1], table_plane_[2]);
