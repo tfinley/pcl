@@ -1,0 +1,1 @@
+./pcl_global_classification_cluster_extraction -models_dir /home/taylor/src/point_models/ -descriptor_name esf -training_dir /home/taylor/src/trained_point_models/ -nn 10
