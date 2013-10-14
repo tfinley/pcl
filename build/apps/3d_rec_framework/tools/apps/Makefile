@@ -184,6 +184,34 @@ pcl_global_classification/fast:
 .PHONY : pcl_global_classification/fast
 
 # Convenience name for target.
+apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/rule:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/rule
+.PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/rule
+
+# Convenience name for target.
+pcl_global_classification_cluster_extraction: apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/rule
+.PHONY : pcl_global_classification_cluster_extraction
+
+# fast build rule for target.
+pcl_global_classification_cluster_extraction/fast:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build
+.PHONY : pcl_global_classification_cluster_extraction/fast
+
+# Convenience name for target.
+apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/rule:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/rule
+.PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/rule
+
+# Convenience name for target.
+pcl_global_classification_compute_test: apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/rule
+.PHONY : pcl_global_classification_compute_test
+
+# fast build rule for target.
+pcl_global_classification_compute_test/fast:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build
+.PHONY : pcl_global_classification_compute_test/fast
+
+# Convenience name for target.
 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule:
 	cd /home/taylor/src/pcl/build && $(MAKE) -f CMakeFiles/Makefile2 apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule
 .PHONY : apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_print_conf.dir/rule
@@ -262,6 +290,54 @@ src/global_classification.s: src/global_classification.cpp.s
 src/global_classification.cpp.s:
 	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification.dir/src/global_classification.cpp.s
 .PHONY : src/global_classification.cpp.s
+
+src/global_classification_cluster_extraction.o: src/global_classification_cluster_extraction.cpp.o
+.PHONY : src/global_classification_cluster_extraction.o
+
+# target to build an object file
+src/global_classification_cluster_extraction.cpp.o:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/src/global_classification_cluster_extraction.cpp.o
+.PHONY : src/global_classification_cluster_extraction.cpp.o
+
+src/global_classification_cluster_extraction.i: src/global_classification_cluster_extraction.cpp.i
+.PHONY : src/global_classification_cluster_extraction.i
+
+# target to preprocess a source file
+src/global_classification_cluster_extraction.cpp.i:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/src/global_classification_cluster_extraction.cpp.i
+.PHONY : src/global_classification_cluster_extraction.cpp.i
+
+src/global_classification_cluster_extraction.s: src/global_classification_cluster_extraction.cpp.s
+.PHONY : src/global_classification_cluster_extraction.s
+
+# target to generate assembly for a file
+src/global_classification_cluster_extraction.cpp.s:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/src/global_classification_cluster_extraction.cpp.s
+.PHONY : src/global_classification_cluster_extraction.cpp.s
+
+src/global_classification_compute_test.o: src/global_classification_compute_test.cpp.o
+.PHONY : src/global_classification_compute_test.o
+
+# target to build an object file
+src/global_classification_compute_test.cpp.o:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/src/global_classification_compute_test.cpp.o
+.PHONY : src/global_classification_compute_test.cpp.o
+
+src/global_classification_compute_test.i: src/global_classification_compute_test.cpp.i
+.PHONY : src/global_classification_compute_test.i
+
+# target to preprocess a source file
+src/global_classification_compute_test.cpp.i:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/src/global_classification_compute_test.cpp.i
+.PHONY : src/global_classification_compute_test.cpp.i
+
+src/global_classification_compute_test.s: src/global_classification_compute_test.cpp.s
+.PHONY : src/global_classification_compute_test.s
+
+# target to generate assembly for a file
+src/global_classification_compute_test.cpp.s:
+	cd /home/taylor/src/pcl/build && $(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/src/global_classification_compute_test.cpp.s
+.PHONY : src/global_classification_compute_test.cpp.s
 
 src/global_classification_print_conf.o: src/global_classification_print_conf.cpp.o
 .PHONY : src/global_classification_print_conf.o
@@ -373,6 +449,8 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... pcl_global_classification"
+	@echo "... pcl_global_classification_cluster_extraction"
+	@echo "... pcl_global_classification_compute_test"
 	@echo "... pcl_global_classification_print_conf"
 	@echo "... pcl_global_classification_stat"
 	@echo "... pcl_global_classification_wl"
@@ -382,6 +460,12 @@ help:
 	@echo "... src/global_classification.o"
 	@echo "... src/global_classification.i"
 	@echo "... src/global_classification.s"
+	@echo "... src/global_classification_cluster_extraction.o"
+	@echo "... src/global_classification_cluster_extraction.i"
+	@echo "... src/global_classification_cluster_extraction.s"
+	@echo "... src/global_classification_compute_test.o"
+	@echo "... src/global_classification_compute_test.i"
+	@echo "... src/global_classification_compute_test.s"
 	@echo "... src/global_classification_print_conf.o"
 	@echo "... src/global_classification_print_conf.i"
 	@echo "... src/global_classification_print_conf.s"

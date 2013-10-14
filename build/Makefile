@@ -2874,6 +2874,32 @@ pcl_global_classification/fast:
 .PHONY : pcl_global_classification/fast
 
 #=============================================================================
+# Target rules for targets named pcl_global_classification_cluster_extraction
+
+# Build rule for target.
+pcl_global_classification_cluster_extraction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_global_classification_cluster_extraction
+.PHONY : pcl_global_classification_cluster_extraction
+
+# fast build rule for target.
+pcl_global_classification_cluster_extraction/fast:
+	$(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_cluster_extraction.dir/build
+.PHONY : pcl_global_classification_cluster_extraction/fast
+
+#=============================================================================
+# Target rules for targets named pcl_global_classification_compute_test
+
+# Build rule for target.
+pcl_global_classification_compute_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_global_classification_compute_test
+.PHONY : pcl_global_classification_compute_test
+
+# fast build rule for target.
+pcl_global_classification_compute_test/fast:
+	$(MAKE) -f apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build.make apps/3d_rec_framework/tools/apps/CMakeFiles/pcl_global_classification_compute_test.dir/build
+.PHONY : pcl_global_classification_compute_test/fast
+
+#=============================================================================
 # Target rules for targets named pcl_global_classification_print_conf
 
 # Build rule for target.
@@ -4617,6 +4643,8 @@ help:
 	@echo "... pcl_test_search_speed"
 	@echo "... pcl_3d_rec_framework"
 	@echo "... pcl_global_classification"
+	@echo "... pcl_global_classification_cluster_extraction"
+	@echo "... pcl_global_classification_compute_test"
 	@echo "... pcl_global_classification_print_conf"
 	@echo "... pcl_global_classification_stat"
 	@echo "... pcl_global_classification_wl"

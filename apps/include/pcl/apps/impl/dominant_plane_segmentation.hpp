@@ -30,6 +30,8 @@
  *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
+ *  
+ *  //note from Taylor
  *
  */
 
@@ -721,7 +723,7 @@ pcl::apps::DominantPlaneSegmentation<PointType>::compute_full (std::vector<Cloud
   clusters_tree_->setEpsilon (1);
 
   // Normal estimation parameters
-  n3d_.setKSearch (10);
+  n3d_.setKSearch (k_);
   n3d_.setSearchMethod (normals_tree_);
 
   // Table model fitting parameters
@@ -730,8 +732,8 @@ pcl::apps::DominantPlaneSegmentation<PointType>::compute_full (std::vector<Cloud
   seg_.setNormalDistanceWeight (0.1);
   seg_.setOptimizeCoefficients (true);
   seg_.setModelType (pcl::SACMODEL_NORMAL_PLANE);
-  seg_.setMethodType (pcl::SAC_MSAC);
-  seg_.setProbability (0.98);
+  seg_.setMethodType (pcl::SAC_RANSAC);
+  seg_.setProbability (0.99);
 
   proj_.setModelType (pcl::SACMODEL_NORMAL_PLANE);
   bb_cluster_proj_.setModelType (pcl::SACMODEL_NORMAL_PLANE);
@@ -824,12 +826,12 @@ pcl::apps::DominantPlaneSegmentation<PointType>::compute_full (std::vector<Cloud
 
   // ---[ Get the objects on top of the table
   pcl::PointIndices cloud_object_indices;
-  prism_.setInputCloud (cloud_filtered_);
+  prism_.setInputCloud (input_); // TF 10.02 was prism_.setInputCloud (cloud_filtered_);
   prism_.setInputPlanarHull (table_hull);
   prism_.segment (cloud_object_indices);
 
   pcl::ExtractIndices<PointType> extract_object_indices;
-  extract_object_indices.setInputCloud (cloud_downsampled_);
+  extract_object_indices.setInputCloud (input_); // TF 10.02 was extract_object_indices.setInputCloud (cloud_downsampled_);
   extract_object_indices.setIndices (boost::make_shared<const pcl::PointIndices> (cloud_object_indices));
   extract_object_indices.filter (*cloud_objects_);
 
@@ -838,7 +840,7 @@ pcl::apps::DominantPlaneSegmentation<PointType>::compute_full (std::vector<Cloud
 
   // ---[ Split the objects into Euclidean clusters
   std::vector<pcl::PointIndices> clusters2;
-  cluster_.setInputCloud (cloud_filtered_);
+  cluster_.setInputCloud (input_); // TF 10.02 was cluster_.setInputCloud (cloud_filtered_)
   cluster_.setIndices (boost::make_shared<const pcl::PointIndices> (cloud_object_indices));
   cluster_.extract (clusters2);
 

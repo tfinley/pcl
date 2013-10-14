@@ -56,16 +56,6 @@ pcl/features/integral_image_normal.h
 pcl/common/time.h
 -
 
-../apps/include/pcl/apps/render_views_tesselated_sphere.h
-vtkSmartPointer.h
--
-vtkPolyData.h
--
-pcl/common/common.h
--
-boost/function.hpp
--
-
 ../common/include/pcl/ModelCoefficients.h
 string
 -
@@ -1750,50 +1740,6 @@ pcl/apps/dominant_plane_segmentation.h
 pcl/apps/impl/dominant_plane_segmentation.hpp
 -
 
-/home/taylor/src/pcl/apps/src/render_views_tesselated_sphere.cpp
-pcl/point_types.h
--
-pcl/apps/render_views_tesselated_sphere.h
--
-vtkCellData.h
--
-vtkWorldPointPicker.h
--
-vtkPropPicker.h
--
-vtkPlatonicSolidSource.h
--
-vtkLoopSubdivisionFilter.h
--
-vtkTriangle.h
--
-vtkTransform.h
--
-vtkHardwareSelector.h
--
-vtkSelectionNode.h
--
-vtkVisibleCellSelector.h
--
-vtkSelection.h
--
-vtkCellArray.h
--
-vtkTransformFilter.h
--
-vtkCamera.h
--
-vtkActor.h
--
-vtkRenderWindow.h
--
-vtkRenderer.h
--
-vtkPolyDataMapper.h
--
-vtkPointPicker.h
--
-
 /usr/include/eigen3/Eigen/Cholesky
 Core
 /usr/include/eigen3/Eigen/Core
@@ -2796,18 +2742,6 @@ vtkAlgorithm.h
 vtkAbstractMapper.h
 /usr/include/vtk-5.8/vtkAbstractMapper.h
 
-/usr/include/vtk-5.8/vtkAbstractPicker.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
-/usr/include/vtk-5.8/vtkAbstractPropPicker.h
-vtkAbstractPicker.h
-/usr/include/vtk-5.8/vtkAbstractPicker.h
-
-/usr/include/vtk-5.8/vtkAbstractTransform.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
 /usr/include/vtk-5.8/vtkActor.h
 vtkProp3D.h
 /usr/include/vtk-5.8/vtkProp3D.h
@@ -2836,10 +2770,6 @@ vtkObject.h
 vtkPolyDataAlgorithm.h
 /usr/include/vtk-5.8/vtkPolyDataAlgorithm.h
 
-/usr/include/vtk-5.8/vtkApproximatingSubdivisionFilter.h
-vtkPolyDataAlgorithm.h
-/usr/include/vtk-5.8/vtkPolyDataAlgorithm.h
-
 /usr/include/vtk-5.8/vtkArrayIterator.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
@@ -2861,10 +2791,6 @@ vtkObjectFactory.h
 /usr/include/vtk-5.8/vtkArrayIteratorTemplateImplicit.txx
 vtkArrayIteratorTemplate.txx
 /usr/include/vtk-5.8/vtkArrayIteratorTemplate.txx
-
-/usr/include/vtk-5.8/vtkCamera.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
 
 /usr/include/vtk-5.8/vtkCell.h
 vtkObject.h
@@ -3010,14 +2936,6 @@ vtkDataArrayTemplate.h
 vtkActor.h
 /usr/include/vtk-5.8/vtkActor.h
 
-/usr/include/vtk-5.8/vtkHardwareSelector.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
-/usr/include/vtk-5.8/vtkHomogeneousTransform.h
-vtkAbstractTransform.h
-/usr/include/vtk-5.8/vtkAbstractTransform.h
-
 /usr/include/vtk-5.8/vtkIOStream.h
 vtkConfigure.h
 /usr/include/vtk-5.8/vtkConfigure.h
@@ -3126,27 +3044,11 @@ vtkActor.h
 vtkActor2D.h
 /usr/include/vtk-5.8/vtkActor2D.h
 
-/usr/include/vtk-5.8/vtkLinearTransform.h
-vtkHomogeneousTransform.h
-/usr/include/vtk-5.8/vtkHomogeneousTransform.h
-
-/usr/include/vtk-5.8/vtkLoopSubdivisionFilter.h
-vtkApproximatingSubdivisionFilter.h
-/usr/include/vtk-5.8/vtkApproximatingSubdivisionFilter.h
-
 /usr/include/vtk-5.8/vtkMapper.h
 vtkAbstractMapper3D.h
 /usr/include/vtk-5.8/vtkAbstractMapper3D.h
 vtkScalarsToColors.h
 /usr/include/vtk-5.8/vtkScalarsToColors.h
-
-/usr/include/vtk-5.8/vtkMath.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-vtkPolynomialSolversUnivariate.h
-/usr/include/vtk-5.8/vtkPolynomialSolversUnivariate.h
-assert.h
--
 
 /usr/include/vtk-5.8/vtkMatrix4x4.h
 vtkObject.h
@@ -3176,31 +3078,15 @@ vtkSystemIncludes.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
 
-/usr/include/vtk-5.8/vtkPicker.h
-vtkAbstractPropPicker.h
-/usr/include/vtk-5.8/vtkAbstractPropPicker.h
-
-/usr/include/vtk-5.8/vtkPlatonicSolidSource.h
-vtkPolyDataAlgorithm.h
-/usr/include/vtk-5.8/vtkPolyDataAlgorithm.h
-
 /usr/include/vtk-5.8/vtkPointData.h
 vtkDataSetAttributes.h
 /usr/include/vtk-5.8/vtkDataSetAttributes.h
-
-/usr/include/vtk-5.8/vtkPointPicker.h
-vtkPicker.h
-/usr/include/vtk-5.8/vtkPicker.h
 
 /usr/include/vtk-5.8/vtkPointSet.h
 vtkDataSet.h
 /usr/include/vtk-5.8/vtkDataSet.h
 vtkPoints.h
 /usr/include/vtk-5.8/vtkPoints.h
-
-/usr/include/vtk-5.8/vtkPointSetAlgorithm.h
-vtkAlgorithm.h
-/usr/include/vtk-5.8/vtkAlgorithm.h
 
 /usr/include/vtk-5.8/vtkPoints.h
 vtkObject.h
@@ -3232,10 +3118,6 @@ vtkTexture.h
 vtkCell.h
 /usr/include/vtk-5.8/vtkCell.h
 
-/usr/include/vtk-5.8/vtkPolynomialSolversUnivariate.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
 /usr/include/vtk-5.8/vtkProp.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
@@ -3250,10 +3132,6 @@ vtkCollection.h
 vtkProp.h
 /usr/include/vtk-5.8/vtkProp.h
 
-/usr/include/vtk-5.8/vtkPropPicker.h
-vtkAbstractPropPicker.h
-/usr/include/vtk-5.8/vtkAbstractPropPicker.h
-
 /usr/include/vtk-5.8/vtkProperty.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
@@ -3261,10 +3139,6 @@ vtkObject.h
 /usr/include/vtk-5.8/vtkProperty2D.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
-
-/usr/include/vtk-5.8/vtkRenderWindow.h
-vtkWindow.h
-/usr/include/vtk-5.8/vtkWindow.h
 
 /usr/include/vtk-5.8/vtkRenderer.h
 vtkViewport.h
@@ -3281,14 +3155,6 @@ vtkRenderer.h
 /usr/include/vtk-5.8/vtkRenderer.h
 
 /usr/include/vtk-5.8/vtkScalarsToColors.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
-/usr/include/vtk-5.8/vtkSelection.h
-vtkDataObject.h
-/usr/include/vtk-5.8/vtkDataObject.h
-
-/usr/include/vtk-5.8/vtkSelectionNode.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
 
@@ -3356,22 +3222,6 @@ vtkImageAlgorithm.h
 vtkSystemIncludes.h
 /usr/include/vtk-5.8/vtkSystemIncludes.h
 
-/usr/include/vtk-5.8/vtkTransform.h
-vtkLinearTransform.h
-/usr/include/vtk-5.8/vtkLinearTransform.h
-vtkMatrix4x4.h
-/usr/include/vtk-5.8/vtkMatrix4x4.h
-
-/usr/include/vtk-5.8/vtkTransformFilter.h
-vtkPointSetAlgorithm.h
-/usr/include/vtk-5.8/vtkPointSetAlgorithm.h
-
-/usr/include/vtk-5.8/vtkTriangle.h
-vtkCell.h
-/usr/include/vtk-5.8/vtkCell.h
-vtkMath.h
-/usr/include/vtk-5.8/vtkMath.h
-
 /usr/include/vtk-5.8/vtkType.h
 vtkConfigure.h
 /usr/include/vtk-5.8/vtkConfigure.h
@@ -3424,10 +3274,6 @@ vtkPolyDataAlgorithm.h
 vtkObject.h
 /usr/include/vtk-5.8/vtkObject.h
 
-/usr/include/vtk-5.8/vtkVisibleCellSelector.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
 /usr/include/vtk-5.8/vtkVolume.h
 vtkProp3D.h
 /usr/include/vtk-5.8/vtkProp3D.h
@@ -3449,14 +3295,6 @@ vtkABI.h
 /usr/include/vtk-5.8/vtkABI.h
 windows.h
 -
-
-/usr/include/vtk-5.8/vtkWindow.h
-vtkObject.h
-/usr/include/vtk-5.8/vtkObject.h
-
-/usr/include/vtk-5.8/vtkWorldPointPicker.h
-vtkAbstractPicker.h
-/usr/include/vtk-5.8/vtkAbstractPicker.h
 
 /usr/include/vtk-5.8/vtkstd/algorithm
 vtkConfigure.h

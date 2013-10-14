@@ -87,11 +87,14 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 			std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> clusters;
 			std::vector<pcl::PointIndices> indices;
 			dps.setDownsamplingSize (0.01f); //TMF was (0.02f)
-			dps.compute_fast (clusters);
+			dps.compute_full (clusters); // was dps.compute_fast(clusters)
 			dps.getIndicesClusters (indices);
+			//testing to see what the indices are
+			//cout << "indices x: " << indices << endl;
 			Eigen::Vector4f table_plane_;
 			Eigen::Vector3f normal_plane_ = Eigen::Vector3f (table_plane_[0], table_plane_[1], table_plane_[2]);
 			dps.getTableCoefficients (table_plane_);
+
 
 /*			//dont know what this does - housekeeping
 			for (size_t i = 0; i < previous_cluster_size; i++)
@@ -111,6 +114,10 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 /*			previous_categories_size = 0;*/
 			float dist_ = 0.03f;
 
+			int clustersizetest = clusters.size ();
+			cout << "clustersize" << endl;
+			cout << clustersizetest << endl;
+
 			//setup through each cluster - for my testing I will only have one cluster but i will keep this code to be safe
 			for (size_t i = 0; i < clusters.size (); i++)
 			{
@@ -120,12 +127,15 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 					cout << "cluster was greater than 1" << endl;
 					cout << "*******************************" << endl;
 				}
+				cout << "i: " << i << endl;
 				std::stringstream cluster_name;
 				cluster_name << "cluster_" << i;
 				pcl::visualization::PointCloudColorHandlerRandom<pcl::PointXYZ> random_handler (clusters[i]);
 				global.setInputCloud (xyz_points);
-				global.setIndices (indices[i].indices);
+				cout << "global.setIndices(indices[i].indicies): ..." << endl;
+				global.setIndices (indices[i].indices); // was global.setIndices (indices[i].indices);
 				global.classify ();
+
 
 				std::vector < std::string > categories;
 				std::vector<float> conf;
@@ -136,6 +146,7 @@ segmentAndClassify (typename pcl::rec_3d_framework::GlobalNNPipeline<DistT, Poin
 				std::string category = categories[0];
 				Eigen::Vector4f centroid;
 				pcl::compute3DCentroid (*xyz_points, indices[i].indices, centroid);
+				cout << "5" << endl;
 		  
 				//TMF - this was here. it was setup to publish 3d text to the screen. I might not need it anymore
 				//TMF - categories.size should be 1 with only the top choice, i will keep this loop just to be safe
